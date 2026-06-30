@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "phoneosint"
+version = "1.0.0"
+description = "Advanced OSINT reconnaissance tool for phone numbers — by CipherZeroo"
+readme = "README.md"
+license = { text = "GPL-3.0-or-later" }
+authors = [
+    { name = "CipherZeroo" },
+]
+maintainers = [
+    { name = "CipherZeroo" },
+]
+requires-python = ">=3.9"
+keywords = ["osint", "phonenumber", "reconnaissance", "pentest", "kali"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Information Technology",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Natural Language :: English",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Security",
+]
+dependencies = [
+    "phonenumbers>=8.13.0",
+    "requests>=2.31.0",
+    "colorama>=0.4.6",
+    "argparse>=1.4.0",
+]
+
+[project.scripts]
+phoneosint = "phoneosint.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/CipherZeroo/phoneosint"
+Repository = "https://github.com/CipherZeroo/phoneosint"
+"Bug Tracker" = "https://github.com/CipherZeroo/phoneosint/issues"
